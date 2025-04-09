@@ -1,10 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Game 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Title Here</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .game-container {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    iframe, canvas {
+      border: none;
+      max-width: 100%;
+      max-height: 80vh;
+    }
+
+    a.back {
+      margin: 20px;
+      text-decoration: none;
+      color: #00d8ff;
+      font-weight: bold;
+    }
+
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>This is Game 1!</h1>
-  <p>You can embed your game here using iframe or a script.</p>
+  <header>Game Title Here</header>
+  <div class="game-container">
+  https://turbowarp.org/105500895/embed
+    <iframe src="your-game-file.html" width="800" height="600" allowfullscreen></iframe>
+  </div>
+
+  <a class="back" href="../index.html">⬅ Back to games</a>
 </body>
 </html>
